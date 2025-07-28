@@ -1,0 +1,288 @@
+/* =========================
+   متغيرات الألوان العامة
+========================= */
+:root {
+  --primary-color: #2358af;
+  --secondary-color: #ffd700;
+  --text-dark: #000;
+  --text-gray: #2358af;
+  --text-light: #fff;
+  --background-light: #f9f9f9;
+  --footer-bg: #222;
+  --border-color: #2358af;
+}
+
+/* =========================
+   الإعدادات العامة
+========================= */
+body {
+  font-family: 'Cairo', sans-serif;
+  direction: rtl;
+  background-color: var(--background-light);
+  margin: 0;
+  padding: 0;
+}
+
+/* الشعار */
+.main-logo {
+  height: 110px;
+  filter: brightness(0) saturate(100%) invert(19%) sepia(82%) saturate(700%) hue-rotate(196deg) brightness(93%) contrast(95%);
+}
+
+/* وصف الشركة */
+.company-desc {
+  color: var(--primary-color);
+  font-weight: bold;
+  font-size: 18px;
+}
+
+/* أيقونات التواصل */
+.social-icons a {
+  color: var(--text-dark);
+  font-size: 30px;
+  margin-left: 10px;
+  transition: color 0.3s ease;
+}
+
+.social-icons a:hover {
+  color: var(--primary-color);
+}
+
+/* =========================
+   شريط التنقل
+========================= */
+.main-navbar {
+  background-color: var(--primary-color);
+}
+
+.main-navbar .nav-link {
+  color: var(--text-light) !important;
+  font-size: 18px;
+  padding: 10px 20px;
+  font-weight: bold;
+  transition: color 0.3s ease;
+}
+
+.main-navbar .nav-link:hover,
+.main-navbar .nav-link.active {
+  color: var(--secondary-color) !important;
+}
+
+/* =========================
+   قسم الترحيب
+========================= */
+.hero-section {
+  background-color: var(--text-light);
+  height: 400px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.hero-section h1 {
+  font-size: 40px;
+  font-weight: bold;
+  color: var(--text-dark);
+}
+
+.hero-section p {
+  font-size: 18px;
+  color: var(--text-gray);
+}
+
+/* =========================
+   قسم من نحن
+========================= */
+.about-section h2 {
+  font-size: 32px;
+  font-weight: bold;
+}
+
+.about-section p {
+  font-size: 18px;
+}
+.about-section {
+  background-color: #2358af;
+  color: var(--text-light);
+}
+
+
+/* =========================
+   الفوتر
+========================= */
+footer {
+  background-color: var(--footer-bg);
+  color: var(--text-light);
+}
+
+/* مربعات الخدمات */
+.service-box {
+  background-color: #fff;
+  border: 2px solid var(--border-color);
+  border-radius: 10px;
+  padding: 30px;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-decoration: none;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  cursor: pointer;
+}
+
+.service-box:hover {
+  transform: scale(1.05);
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.service-box h5,
+.service-box p {
+  color: var(--text-dark);
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+/* قسم خدماتنا */
+#services-wrapper,
+#services-wrapper .container,
+#services {
+  background-color: var(--text-light);
+}
+
+#services h2 {
+  font-weight: bold;
+  color: var(--text-dark);
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+/* قسم المنتجات */
+.products-section {
+  background-color: var(--text-light);
+}
+#products h2 {
+  font-weight: bold;
+  color: #000;
+}
+
+.product-box {
+  border: 2px solid var(--primary-color);
+  background-color: var(--text-light);
+  border-radius: 10px;
+  padding: 20px;
+  transition: transform 0.3s ease;
+}
+
+.product-box:hover {
+  transform: scale(1.05);
+}
+
+.product-img-wrapper {
+  background-color: var(--primary-color);
+  padding: 20px;
+  border-radius: 10px;
+  text-align: center;
+}
+
+.product-img {
+  transition: transform 0.3s ease;
+}
+
+.product-img-wrapper:hover .product-img {
+  transform: scale(1.1);
+}
+
+.product-title {
+  text-align: center;
+  margin-top: 15px;
+  font-weight: bold;
+  color: var(--text-dark);
+}
+
+.product-btn {
+  display: inline-block;
+  border: 2px solid var(--primary-color);
+  background-color: white;
+  color: black;
+  padding: 8px 20px;
+  font-weight: bold;
+  border-radius: 6px;
+  transition: all 0.3s ease;
+  text-decoration: none !important;
+}
+
+.product-btn:hover {
+  background-color: var(--primary-color);
+  color: white;
+}
+
+/* صفحة تفاصيل المنتجات */
+.page-title {
+  font-weight: bold;
+  color: var(--text-dark);
+  text-align: center;
+  padding: 1.5rem 0;
+}
+
+.product-card {
+  border: 2px solid var(--primary-color);
+  border-radius: 10px;
+  padding: 20px;
+  background-color: var(--text-light);
+  transition: transform 0.3s;
+  text-align: center;
+}
+
+.product-card:hover img {
+  transform: scale(1.05);
+}
+
+.product-card img {
+  background-color: var(--primary-color);
+  padding: 20px;
+  border-radius: 10px;
+  transition: transform 0.3s;
+}
+
+.product-card h5 {
+  color: var(--text-dark);
+  font-weight: bold;
+  margin-top: 15px;
+}
+
+.product-card .btn {
+  border: 2px solid var(--primary-color);
+  color: var(--text-dark);
+  font-weight: bold;
+  background-color: var(--text-light);
+  text-decoration: none;
+}
+
+.product-card .btn:hover {
+  background-color: var(--primary-color);
+  color: var(--text-light);
+}
+
+/* قسم تواصل معنا */
+#contact h2 {
+  color: var(--text-dark);
+  font-weight: bold;
+}
+
+#contact input,
+#contact textarea {
+  border: 2px solid var(--primary-color);
+  background-color: var(--text-light);
+  color: var(--text-dark);
+  font-weight: bold;
+  border-radius: 10px;
+  padding: 10px;
+}
+
+#contact input:focus,
+#contact textarea:focus {
+  outline: none;
+  border-color: var(--primary-color);
+  box-shadow: 0 0 5px rgba(35, 88, 175, 0.4);
+}

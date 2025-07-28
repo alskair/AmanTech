@@ -1,1 +1,170 @@
-<h1>مرحبًا بك في موقع أمان تك</h1>
+<!-- index.html -->
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>الرئيسية | أمان تك</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.rtl.min.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;700&display=swap" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- الشريط العلوي -->
+  <div class="top-white-bar py-2 px-3 d-flex justify-content-between align-items-center">
+    <div class="d-flex align-items-center">
+      <img src="img/Logo AmanTech.png" alt="شعار أمان تك" class="main-logo me-2">
+      <span class="company-desc">أنظمة حماية و معدات شبكات</span>
+    </div>
+    <div class="social-icons d-flex">
+      <a href="https://wa.me/0911764613" target="_blank"><i class="bi bi-whatsapp"></i></a>
+      <a href="#"><i class="bi bi-facebook"></i></a>
+    </div>
+  </div>
+
+  <!-- شريط التنقل -->
+  <nav class="navbar navbar-expand-lg main-navbar">
+    <div class="container justify-content-center">
+      <ul class="navbar-nav">
+        <li class="nav-item"><a class="nav-link active" href="#home">الرئيسية</a></li>
+        <li class="nav-item"><a class="nav-link" href="#services">الخدمات</a></li>
+        <li class="nav-item"><a class="nav-link" href="#products">المنتجات</a></li>
+        <li class="nav-item"><a class="nav-link" href="#contact">تواصل معنا</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- الترحيب -->
+  <section id="home" class="hero-section py-5 text-center">
+    <div class="container">
+      <h1>مرحبًا بكم في أمان تك</h1>
+      <p>نوفر لك حلولاً تقنية آمنة ومبتكرة تناسب احتياجاتك</p>
+    </div>
+  </section>
+
+  <!-- من نحن -->
+  <section class="about-section py-5">
+    <div class="container text-center">
+      <h2 class="mb-3">من نحن</h2>
+      <p>شركة ليبية تقدم حلول الشبكات والمراقبة والخدمات البرمجية بجودة عالية واحترافية.</p>
+    </div>
+  </section>
+
+  <!-- خدماتنا -->
+  <section id="services-wrapper" class="py-5">
+    <div class="container text-center" id="services">
+      <h2 class="mb-4">خدماتنا</h2>
+      <div class="row g-4">
+        <div class="col-md-4">
+          <a href="#contact" class="service-box">
+            <h5>تركيب الشبكات</h5>
+            <p>شبكات داخلية، سلكية ولاسلكية.</p>
+          </a>
+        </div>
+        <div class="col-md-4">
+          <a href="#contact" class="service-box">
+            <h5>أنظمة المراقبة</h5>
+            <p>كاميرات داخلية وخارجية عالية الجودة.</p>
+          </a>
+        </div>
+        <div class="col-md-4">
+          <a href="#contact" class="service-box">
+            <h5>الخدمات البرمجية</h5>
+            <p>برامج حسب الطلب مثل أنظمة الحجز والمخازن.</p>
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- المنتجات -->
+  <section id="products" class="py-5 bg-white">
+    <div class="container">
+      <h2 class="text-center mb-5">منتجاتنا</h2>
+      <div class="row g-4 mt-4">
+        <div class="col-md-4">
+          <div class="product-box">
+            <div class="product-img-wrapper">
+              <img src="img/IP _Phone.png" class="img-fluid product-img" alt="كاميرات مراقبة">
+            </div>
+            <h5 class="product-title">مقسمات هواتف</h5>
+            <div class="text-center mt-2">
+              <a href="index.html" class="product-btn">عرض المنتجات</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-4">
+          <div class="product-box">
+            <div class="product-img-wrapper">
+              <img src="img/Network_Devices.png" class="img-fluid product-img" alt="معدات شبكات">
+            </div>
+            <h5 class="product-title">معدات شبكات</h5>
+            <div class="text-center mt-2">
+              <a href="index.html" class="product-btn">عرض المنتجات</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-4">
+          <div class="product-box">
+            <div class="product-img-wrapper">
+              <img src="img/ZKT Devices.png" class="img-fluid product-img" alt="أجهزة حضور وانصراف">
+            </div>
+            <h5 class="product-title">أجهزة حضور وانصراف</h5>
+            <div class="text-center mt-2">
+              <a href="Services.html" class="product-btn">عرض المنتجات</a>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- تواصل معنا -->
+  <section id="contact" class="py-5 bg-white">
+    <div class="container">
+      <h2 class="text-center mb-4">تواصل معنا</h2>
+      <form id="whatsappForm" onsubmit="sendWhatsAppMessage(event)" class="contact-form mx-auto" style="max-width: 500px;">
+        <div class="mb-3">
+          <label for="name" class="form-label">الاسم</label>
+          <input type="text" class="form-control" id="name" placeholder="اكتب اسمك" required>
+        </div>
+        <div class="mb-3">
+            <label for="phone" class="form-label">رقم الهاتف</label>
+            <input type="text" class="form-control" id="phone" placeholder="اكتب الرقم" required>
+        </div>
+                <div class="mb-3">
+            <label for="phone" class="form-label">اسم الجهاز</label>
+            <input type="text" class="form-control" id="phone" placeholder="اكتب اسم الجهاز" required>
+        </div>
+        <div class="mb-3">
+          <label for="message" class="form-label">الرسالة</label>
+          <textarea class="form-control" id="message" rows="4" placeholder="اكتب رسالتك" required></textarea>
+        </div>
+        <button type="submit" class="btn btn-success w-100">إرسال عبر واتساب</button>
+      </form>
+    </div>
+  </section>
+
+  <!-- الفوتر -->
+  <footer class="text-center py-3 bg-dark text-white">
+    <p class="mb-0">© 2025 أمان تك - جميع الحقوق محفوظة</p>
+  </footer>
+
+  <script>
+    function sendWhatsAppMessage(event) {
+      event.preventDefault();
+      const name = document.getElementById("name").value.trim();
+      const message = document.getElementById("message").value.trim();
+      const phone = document.getElementById("phone").value.trim();
+      const whatsappURL = `https://wa.me/2180911764613?text=${encodeURIComponent(`مرحبًا، أنا ${name}\nرقمي: ${phone}\nالرسالة: ${message}`)}`;
+      window.open(whatsappURL, "_blank");
+    }
+  </script>
+
+</body>
+</html>
