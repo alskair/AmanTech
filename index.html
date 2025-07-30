@@ -20,7 +20,7 @@
     </div>
     <div class="social-icons d-flex">
       <a href="https://wa.me/0911764613" target="_blank"><i class="bi bi-whatsapp"></i></a>
-      <a href="#"><i class="bi bi-facebook"></i></a>
+      <a href="https://www.facebook.com/profile.php?id=61577581266079" target="_blank"><i class="bi bi-facebook"></i></a>
     </div>
   </div>
 
@@ -103,7 +103,7 @@
             </div>
             <h5 class="product-title">معدات شبكات</h5>
             <div class="text-center mt-2">
-              <a href="index.html" class="product-btn">عرض المنتجات</a>
+              <a href="services02.html" class="product-btn">عرض المنتجات</a>
             </div>
           </div>
         </div>
@@ -139,7 +139,8 @@
         </div>
                 <div class="mb-3">
             <label for="phone" class="form-label">اسم الجهاز</label>
-            <input type="text" class="form-control" id="phone" placeholder="اكتب اسم الجهاز" required>
+           <input type="text" class="form-control" id="device" name="device" placeholder="اكتب اسم الجهاز" required>
+
         </div>
         <div class="mb-3">
           <label for="message" class="form-label">الرسالة</label>
@@ -147,6 +148,7 @@
         </div>
         <button type="submit" class="btn btn-success w-100">إرسال عبر واتساب</button>
       </form>
+      
     </div>
   </section>
 
@@ -155,16 +157,20 @@
     <p class="mb-0">© 2025 أمان تك - جميع الحقوق محفوظة</p>
   </footer>
 
-  <script>
-    function sendWhatsAppMessage(event) {
-      event.preventDefault();
-      const name = document.getElementById("name").value.trim();
-      const message = document.getElementById("message").value.trim();
-      const phone = document.getElementById("phone").value.trim();
-      const whatsappURL = `https://wa.me/2180911764613?text=${encodeURIComponent(`مرحبًا، أنا ${name}\nرقمي: ${phone}\nالرسالة: ${message}`)}`;
-      window.open(whatsappURL, "_blank");
-    }
-  </script>
-
+<script>
+  function sendWhatsAppMessage(event) {
+    event.preventDefault();
+    const name = document.getElementById("name").value.trim();
+    const message = document.getElementById("message").value.trim();
+    const phone = document.getElementById("phone").value.trim();
+    const device = document.getElementById("device").value.trim();
+    
+    const whatsappURL = `https://wa.me/2180911764613?text=${encodeURIComponent(
+      `مرحبًا، أنا ${name}\nرقمي: ${phone}\nاسم الجهاز: ${device}\nالرسالة: ${message}`
+    )}`;
+    
+    window.open(whatsappURL, "_blank");
+  }
+</script>
 </body>
 </html>
